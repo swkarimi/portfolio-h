@@ -4,17 +4,20 @@
  */
 
 module.exports = {
-  content: ["./*.html", "./src/**/*.html", "./src/**/*.js"],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      'serif': ['ui-serif', 'Georgia'],
-      'Arial': ['Arial', 'Helvetica', 'sans-serif'],
-      'sans': ['ui-sans-serif', 'system-ui']
+      serif: ["ui-serif", "Georgia"],
+      Arial: ["Arial", "Helvetica", "sans-serif"],
+      sans: ["ui-sans-serif", "system-ui"],
     },
     extend: {
       colors: {
-        customBg: '#1c3554',
-        customText: '#59e0d4',
+        customBg: "#1c3554",
+        customText: "#59e0d4",
+        "custom-light-blue": "#E6FDFF",
+        "custom-light-blue1": "#4A90A4",
+        "custom-light-blue2": "#000080",
       },
       backdropBlur: {
         "10px": "10px",

@@ -1,0 +1,326 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yarn and Darn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Header -->
+
+    <header
+      class="fixed my-5 border-solid top-0 left-1/2 transform -translate-x-1/2 w-[90%] h-[70px] flex justify-between items-center px-6 py-4 rounded-3xl border border-zinc-200 shadow-lg bg-white bg-opacity-70 backdrop-blur-md transition-all duration-300 ease-in-out"
+    >
+      <div class="avatar">
+        <a href="../index.html"
+          ><img
+            class="w-12 h-12 rounded-xl"
+            src="../assets/avataaar.png"
+            alt="Profile"
+        /></a>
+      </div>
+      <div class="flex rounded-full space-x-4">
+        <button
+          class="mode rounded-full w-12 h-12 flex items-center justify-center bg-gray-600 selection:text-white text-xl cursor-pointer transition-colors duration-300 ease-in-out z-40 icon hover:bg-gray-800"
+          id="toggleMode"
+        >
+          <i class="fas fa-moon"></i>
+        </button>
+        <button
+          class="rounded-full w-12 h-12 flex items-center justify-center bg-gray-600 selection:text-white text-xl cursor-pointer transition-colors duration-300 ease-in-out z-40 icon hover:bg-gray-800"
+        >
+          <i class="fas fa-language"></i>
+        </button>
+        <button
+          class="rounded-full w-12 h-12 flex items-center justify-center bg-gray-600 selection:text-white text-xl cursor-pointer transition-colors duration-300 ease-in-out z-40 icon hover:bg-gray-800"
+        >
+          <i class="fas fa-th"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- First Section: Hero Banner -->
+    <section
+      class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-12 md:px-36 lg:px-36 py-20 gap-16"
+    >
+      <div
+        class="w-full max-w-7xl flex flex-col lg:flex-row items-center gap-16"
+      >
+        <!-- Left Column: Text Content -->
+        <div class="text-center lg:text-left w-full lg:w-1/2">
+          <h1
+            class="text-gray-900 text-6xl lg:text-7xl font-black leading-tight"
+          >
+            YARN AND DARN
+          </h1>
+          <p class="text-purple-600 text-3xl lg:text-4xl mt-6 font-medium">
+            Enhancing search efficiency on a carpet shop!
+          </p>
+          <span class="text-gray-500 text-xl lg:text-2xl block mt-6"
+            >UX/UI • GV Design Sprint • Case Study</span
+          >
+        </div>
+
+        <!-- Right Column: Images -->
+        <div class="relative w-full lg:w-1/2 flex justify-center">
+          <img
+            class="w-72 lg:w-[480px] rounded-lg shadow-xl transform -rotate-6 relative top-10"
+            src="../assets/YarnandDarn1.png"
+            alt="App Mockup 2"
+            loading="lazy"
+          />
+          <img
+            class="w-72 lg:w-[480px] rounded-lg shadow-xl transform rotate-6 absolute top-5 left-10"
+            src="../assets/YarnandDarn.png"
+            alt="App Mockup 1"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Second Section -->
+    <section
+      class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-36 px-12 md:px-36 py-12 bg-gray-900 text-white"
+    >
+      <div class="max-w-screen-lg w-full flex flex-col gap-14">
+        <h1 class="text-5xl md:text-5xl font-bold">YARN AND DARN</h1>
+        <h2 class="text-xl md:text-2xl mt-2">
+          Revolutionizing the way you discover and shop for carpets.
+        </h2>
+        <p class="text-lg md:text-xl mt-1">
+          Yarn & Darn is an innovative platform designed to help homeowners,
+          interior designers, and decorators find the perfect carpets with ease.
+          Whether you're searching for a vintage Persian rug, a modern statement
+          piece, or a cozy texture for your space, Yarn & Darn brings a curated
+          selection right to your fingertips.
+        </p>
+      </div>
+      <div class="flex flex-col gap-16">
+        <h3 class="text-lg md:text-xl">
+          <span class="font-bold">ROLES & RESPONSIBILITIES:</span> Research,
+          UX/UI
+        </h3>
+        <h3 class="text-lg md:text-xl mt-2">
+          <span class="font-bold">PROJECT CONTEXT:</span> GV Design Sprint
+        </h3>
+        <h3 class="text-lg md:text-xl mt-2">
+          <span class="font-bold">DURATION:</span> 5 Days (Summer 2023)
+        </h3>
+        <h3 class="text-lg md:text-xl mt-2">
+          <span class="font-bold">TOOLS USED:</span> Figma, Mural, Zoom
+        </h3>
+      </div>
+    </section>
+
+    <!-- Third Section -->
+    <section
+      class="min-h-screen flex flex-col md:flex-row items-center justify-center px-16 md:px-40 py-24 bg-[#FCE7F3] text-black gap-24 text-center"
+    >
+      <div class="max-w-screen-md w-full">
+        <h3 class="text-xl font-bold text-purple-600 uppercase">Problem</h3>
+        <h2 class="text-3xl md:text-4xl mt-4 font-extrabold">
+          Finding the perfect carpet is overwhelming and time-consuming.
+        </h2>
+        <p
+          class="text-lg md:text-xl mt-4 leading-relaxed text-gray-700 font-medium"
+        >
+          With countless styles, colors, and materials available, shoppers often
+          struggle to find a carpet that fits their space, aesthetic, and
+          budget. Traditional shopping methods make comparison difficult,
+          leading to frustration and uncertainty.
+        </p>
+      </div>
+      <div class="max-w-screen-md w-full">
+        <h3 class="text-xl font-bold text-purple-600 uppercase">Solution</h3>
+        <h2 class="text-3xl md:text-4xl mt-4 font-extrabold">
+          A seamless, intuitive platform for discovering and shopping carpets.
+        </h2>
+        <p
+          class="text-lg md:text-xl mt-4 leading-relaxed text-gray-700 font-medium"
+        >
+          Yarn & Darn simplifies carpet shopping by offering a curated
+          selection, interactive filters, and visualization tools. Customers can
+          explore, compare, and even preview how carpets will look in their
+          space—making decisions easier and more enjoyable.
+        </p>
+      </div>
+    </section>
+    <section class="min-h-screen px-16 md:px-40 py-24 bg-white text-black">
+      <h3 class="text-xl font-bold text-purple-600 uppercase text-center">
+        UI Layout
+      </h3>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mt-4">
+        Innovative & Engaging Design
+      </h2>
+      <p
+        class="text-lg md:text-xl text-center text-gray-700 mt-4 max-w-3xl mx-auto"
+      >
+        Our platform features a modern, sleek UI layout designed to enhance user
+        experience, making carpet shopping effortless and enjoyable.
+      </p>
+      <!-- <div
+        class="flex flex-nowrap justify-center items-center gap-x-6 mt-12 h-[600px]"
+      >
+        <img
+          class="h-full max-h-[600px] rounded-lg shadow-lg object-contain"
+          src="../assets/FigmaSC/Home.jpg"
+          alt="UI Layout 1"
+        />
+        <img
+          class="h-full max-h-[600px] rounded-lg shadow-lg object-contain"
+          src="../assets/FigmaSC/Collection.jpg"
+          alt="UI Layout 2"
+        />
+        <img
+          class="h-full max-h-[600px] rounded-lg shadow-lg object-contain"
+          src="../assets/FigmaSC/Get inspired.jpg"
+          alt="UI Layout 3"
+        />
+        <img
+          class="h-full max-h-[600px] rounded-lg shadow-lg object-contain"
+          src="../assets/FigmaSC/Blog.jpg"
+          alt="UI Layout 4"
+        />
+        <img
+          class="h-full max-h-[600px] rounded-lg shadow-lg object-contain"
+          src="../assets/FigmaSC/About.jpg"
+          alt="UI Layout 5"
+        />
+      </div> -->
+      <div
+        class="flex flex-nowrap justify-center items-center gap-x-6 mt-12 h-[600px]"
+      >
+        <img
+          class="w-full max-w-[250px] h-full max-h-[600px] rounded-lg shadow-lg object-cover"
+          src="../assets/FigmaSC/Home.jpg"
+          alt="UI Layout 1"
+        />
+        <img
+        class="w-full max-w-[250px] h-full max-h-[600px] rounded-lg shadow-lg object-cover"
+          src="../assets/FigmaSC/Collection.jpg"
+          alt="UI Layout 2"
+        />
+        <img
+        class="w-full max-w-[250px] h-full max-h-[600px] rounded-lg shadow-lg object-cover"
+          src="../assets/FigmaSC/Get inspired.jpg"
+          alt="UI Layout 3"
+        />
+        <img
+        class="w-full max-w-[250px] h-full max-h-[600px] rounded-lg shadow-lg object-cover"
+          src="../assets/FigmaSC/Blog.jpg"
+          alt="UI Layout 4"
+        />
+        <img
+        class="w-full max-w-[250px] h-full max-h-[600px] rounded-lg shadow-lg object-cover"
+          src="../assets/FigmaSC/About.jpg"
+          alt="UI Layout 5"
+        />
+      </div>
+    </section>
+
+    <!-- fourth Section: Solution Ideation -->
+    <section
+      class="min-h-screen px-6 md:px-24 py-16 text-center bg-gray-900 text-white"
+    >
+      <h3 class="text-3xl md:text-4xl font-bold">SOLUTION IDEATION</h3>
+      <h2 class="text-xl md:text-2xl mt-2">
+        Reinventing the Wine Tasting Experience
+      </h2>
+      <img
+        class="mt-10 w-4/5 md:w-2/3 mx-auto"
+        src="../assets/Carpet sketch.jpeg"
+      />
+    </section>
+
+    <!-- Fifth Section: Style Guide -->
+    <section
+      class="min-h-screen max-w-6xl mx-auto p-10 bg-purple-50 shadow-lg rounded-lg"
+    >
+      <h1 class="text-2xl font-bold text-purple-600 text-center mb-6">
+        THE STYLE GUIDE
+      </h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Colors -->
+        <div>
+          <h2 class="text-lg font-semibold">Colors</h2>
+          <div class="mt-4">
+            <p class="font-medium">Primary</p>
+            <div class="flex gap-2 mt-2">
+              <div class="w-12 h-12 bg-purple-700 rounded-lg"></div>
+              <div class="w-12 h-12 bg-purple-400 rounded-lg"></div>
+              <div class="w-12 h-12 bg-purple-200 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <p class="font-medium">Neutral</p>
+            <div class="w-12 h-12 bg-gray-800 rounded-lg"></div>
+          </div>
+        </div>
+
+        <!-- Typography -->
+        <div>
+          <h2 class="text-lg font-semibold">Typography</h2>
+          <p class="text-4xl font-black mt-4">Header 34 pt. Black</p>
+          <p class="text-2xl font-extrabold mt-2">
+            Subheader 24 pt. Extra Bold
+          </p>
+          <p class="text-lg font-semibold mt-2">Body text 20 pt. Semi-bold</p>
+        </div>
+
+        <!-- Components -->
+        <div>
+          <h2 class="text-lg font-semibold">Components</h2>
+
+          <p class="text-sm text-gray-500 mt-4">Default Button Style</p>
+          <div class="flex flex-col gap-4 mt-2">
+            <button
+              class="bg-purple-700 text-white px-6 py-2 rounded-lg font-semibold shadow-md"
+            >
+              Read Book
+            </button>
+            <button
+              class="border-2 border-purple-700 text-purple-700 px-6 py-2 rounded-lg font-semibold shadow-md"
+            >
+              Add to Reading List
+            </button>
+          </div>
+
+          <p class="text-sm text-gray-500 mt-4">Search Bar</p>
+          <div
+            class="flex items-center bg-white shadow-md rounded-lg mt-2 p-3 w-full"
+          >
+            <input
+              type="text"
+              placeholder="What do you want to read today?"
+              class="flex-1 outline-none text-gray-700"
+            />
+            <button class="text-purple-700 text-lg">🎤</button>
+          </div>
+
+          <p class="text-sm text-gray-500 mt-4">Bottom Navigation Menu</p>
+          <div
+            class="flex justify-around bg-white shadow-md p-4 rounded-lg mt-2"
+          >
+            <div class="text-center text-gray-600">🏠<br />Explore</div>
+            <div class="text-center text-gray-600">🔍<br />Search</div>
+            <div class="text-center bg-pink-300 p-3 rounded-full">🐱</div>
+            <div class="text-center text-gray-600">📖<br />Reading List</div>
+            <div class="text-center text-gray-600">⭐<br />Favorites</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
