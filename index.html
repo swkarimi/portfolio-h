@@ -15,12 +15,11 @@
       rel="stylesheet"
     />
     <title>Hadiseh-Shiroudi</title>
-      
   </head>
   <body>
     <div class="container">
       <header
-        class="header flex justify-between items-center px-4 py-0 my-5 rounded-3xl border-solid border-zinc-50 border-2 -translate-x-1/2 fixed top-0 left-1/2"
+        class=" fixed header flex justify-between items-center px-4 py-0 my-5 rounded-3xl border-solid border-zinc-50 border-2 -translate-x-1/2 top-0 left-1/2"
       >
         <div class="avatar">
           <img
@@ -36,7 +35,7 @@
           >
             <i class="fas fa-moon"></i>
           </button>
-          <button
+          <!-- <button
             class="rounded-full w-12 h-12 flex items-center justify-center bg-gray-600 selection:text-white text-xl cursor-pointer transition-colors duration-300 ease-in-out z-40 icon hover:bg-gray-800"
           >
             <i class="fas fa-language"></i>
@@ -44,12 +43,13 @@
           <button
             class="rounded-full w-12 h-12 flex items-center justify-center bg-gray-600 selection:text-white text-xl cursor-pointer transition-colors duration-300 ease-in-out z-40 icon hover:bg-gray-800"          >
             <i class="fas fa-th"></i>
-          </button>
+          </button> -->
         </div>
       </header>
-      <div class="flex justify-between mx-3 my-20 px-8 py-15 gap-5">
+      <div class=" flex justify-between mx-3 my-20 px-8 py-15 gap-5">
         <!-- Left Menu -->
         <div class="side box-border flex flex-col justify-between fixed">
+          
           <div class="Info">
             <h2 class="text-4xl m-0 font-bold">Hadiseh Shiroudi</h2>
             <h3 class="text-2xl font-normal sans my-2">
@@ -60,21 +60,10 @@
               experiences for the web.
             </h5>
           </div>
-          <div class="nav-menu py-10">
-            <!-- <div class="nav-item flex my-6 items-center">
-              <a href="#about" class="flex  items-center">
-              <span class="line active-link"></span>
-              <span class="title">ABOUT</span>
-            </a>
-            </div>
-            <div class="nav-item flex my-6 items-center">
-              <a href="#about" class="flex items-center">
-                <span class="line"></span>
-                <span class="title">EXPERIENCES</span>
-            </a>
-            </div> -->
+          <div class="hidden lg:block nav-menu py-6">
+            
             <div class="nav-item flex my-6 items-center group">
-              <a href="#about" class="flex items-center">
+              <a href="#about" class="flex items-center active">
                 <span class="w-14 h-0.5 bg-gray-400 line"></span>
                 <span class="text-gray-400 cursor-pointer ml-2 group-hover:text-white">ABOUT</span>
               </a>
@@ -93,10 +82,12 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="sm:mt-24">
+            <a href="">
             <button class="bg-white text-black border p-2 rounded-md ">
               View my resume
             </button>
+          </a>
           </div>
           <div class="flex mt-3 fixed bottom-5">
             <a href="https://github.com/Hadise87"><i
@@ -121,6 +112,7 @@
         <!-- Main content -->
     
         <div id = "right-side" class="main ml-[40rem] h-full overflow-y-auto">
+          <!-- <div id = "right-side" class="main ml-0 lg:ml-[40rem] h-full overflow-y-auto"> -->
           <section id ="about" class="about">
             <p class="text-base leading-loose text-justify">
               Detail-oriented and results-driven Front-End Developer with over 3 years of hands-on experience in building engaging, user-friendly web applications. Skilled in utilizing modern technologies and frameworks such as HTML, CSS, JavaScript, React, Next.js, and Vue, I specialize in delivering seamless, responsive designs with a strong focus on user experience and performance optimization.<br />With a proven track record of successful contributions to e-commerce platforms, management systems, and bidding/tender applications, I excel at transforming complex requirements into intuitive and high-performing digital solutions. I thrive in collaborative environments, consistently working effectively within cross-functional teams to meet project goals and deliver exceptional results.<br />Passionate about leveraging technical expertise and creative problem-solving to overcome web development challenges, I am committed to creating impactful, scalable, and innovative web experiences that align with both user needs and business objectives.<br /><br />In my spare time, I love getting creative with design, hanging out with my husband and friends, grabbing a drink, and unwinding with some yoga.
@@ -138,7 +130,7 @@
               </div>
               <div class="mx-8">
                 <h3 class="">Frontend developer, UI/UX designer</h3>
-                <h3 class="text-lg text-white pb-2">Freelance</h3>
+                <h3 class="text-lg  pb-2">Freelance</h3>
                 <p class="pb-4 font-normal text-justify leading-normal">Kotozna In-Room is a multilingual platform that empowers hotels to communicate with guests in 109 languages through automated messaging, enhancing satisfaction, streamlining operations, and reducing front-desk dependencies. As part of the team, I contributed as a Test Automation Engineer, developing robust test scenarios to ensure platform reliability, and as a Frontend Developer using Vue.js, crafting intuitive user interfaces to optimize the guest experience and staff workflows.</p>
                 <img loading="lazy" width="1920" height="1080" class="rounded rounded-lg" src="./public/Kotozna-HP.png">
                 <div class="flex flex-wrap gap-3 pt-3">
@@ -159,7 +151,7 @@
               </div>
               <div class="mx-8">
                 <h3 class="">Frontend developer, Test Autoumation engineer</h3>
-                <h3 class="text-lg text-white pb-2">KOTOZNA</h3>
+                <h3 class="text-lg  pb-2">KOTOZNA</h3>
                 <p class="pb-4 font-normal text-justify leading-normal">Kotozna In-Room is a multilingual platform that empowers hotels to communicate with guests in 109 languages through automated messaging, enhancing satisfaction, streamlining operations, and reducing front-desk dependencies. As part of the team, I contributed as a Test Automation Engineer, developing robust test scenarios to ensure platform reliability, and as a Frontend Developer using Vue.js, crafting intuitive user interfaces to optimize the guest experience and staff workflows.</p>
                 <img loading="lazy" width="1920" height="1080" class="rounded rounded-lg" src="./public/Kotozna-HP.png">
                 <div class="flex flex-wrap gap-4 pt-3">
@@ -181,7 +173,7 @@
               </div>
               <div class="mx-8">
               <h3 class="">Frontend developer, UI/UX designer</h3>
-              <h3 class="text-lg text-white font-bold pb-2">RAKUTEN</h3>
+              <h3 class="text-lg font-bold pb-2">RAKUTEN</h3>
               <p class="pb-4 forn-normal">The Automated RIC (Radio Intelligent Controller) platform is designed to optimize network operations and reduce costs by automating critical tasks such as configuration, fault detection, and resource optimization. Key features include closed-loop automation, enabling the network to autonomously adapt, optimize, and resolve issues, enhancing both performance and user satisfaction. Real-time decision-making ensures the network can swiftly respond to changes in demand and network conditions. The platform also fosters a multi-vendor ecosystem, promoting innovation and competition by allowing operators to select best-in-class solutions. In this project, my role as UI/UX designer and front-end developer involved designing intuitive user interfaces, developing responsive front-end solutions, and ensuring seamless integration of these features to enhance usability and functionality.</p>
               <img class="Image of project" loading="lazy" width="1920" height="1080" class="rounded rounded-lg" src="./public/RIC.png">
               <div class="flex flex-wrap gap-4 pt-3">
@@ -203,7 +195,7 @@
                 <h3>April 2022 - June 2024</h3> <br />
               </div>
               <div class="mx-8">
-              <h3 class="text-lg text-white font-bold pb-2">Kyoto Lesson</h3>
+              <h3 class="text-lg font-bold pb-2">Kyoto Lesson</h3>
               <p class="pb-4 forn-normal">At Kyoto Lesson, I mentored students in the Junior Coders program, where children aged 5 and up were introduced to coding through engaging logic games using ScratchJr and Scratch. My role involved guiding students through the fundamentals of coding, fostering skills in problem-solving, logical thinking, and creativity. I helped build their confidence and curiosity, ensuring they developed a strong foundation for future success in technology.</p>
               <img class="Image of project" loading="lazy" width="1920" height="1080" class="rounded rounded-lg" src="./public/Kyotolesson.png">
               <div class="flex flex-wrap gap-4 pt-3">
@@ -217,7 +209,7 @@
             </a>
 
             <!-- UI/UX -->
-            <a class="exp1 rounded rounded-xl bg-transparent px-6 py-6" href="./UIUX projects/carpetProject.html">
+            <a class="exp1 rounded-xl bg-transparent px-6 py-6" href="./UIUX projects/carpetProject.html">
               <div class="mx-8">
               <h3 class="text-lg text-white font-bold pb-2">Yarn and Darn</h3>
               <p class="pb-2 forn-normal">Crafting a Seamless E-Commerce Experience for Carpet Shopping</p>
@@ -238,11 +230,13 @@
               If you have any questions about my projects or other comments,
               feel free to send me a message.
             </div>
-            <button class="rounded-sm w-40 h-10 bg-white color text-black">Send Message</button>
+            <textarea name="" id="message" class="w-full h-48 text-black" placeholder="Type your message here..." > </textarea>
+            <button onClick="sendMessage()" class="mt-14 rounded-sm w-40 h-10 bg-white color text-black">Send Message</button>
           </section>
+          <div class="h-96 "></div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

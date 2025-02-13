@@ -10,6 +10,7 @@
   box-sizing: border-box;
 }
 html {
+  scroll-padding-top: 12rem;
   scroll-behavior: smooth;
 }
 
@@ -30,7 +31,7 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
 }
-.left_side{
+.left_side {
   color: blue;
   font-weight: bold;
 }
@@ -50,6 +51,10 @@ body {
   width: 6rem;
   background-color: white;
 }
+.nav-item a.active .line {
+  width: 6rem;
+  background-color: white;
+}
 
 .experiences {
   margin-top: 140px;
@@ -66,14 +71,63 @@ body {
   margin-bottom: 22px;
 }
 body.light-mode {
-  background-color: white;
-  color: black;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+h3.light-mode {
+
+  color: #1f2937;
 }
 header.light-mode {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 button.light-mode {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid #efd740;
-  color: yellow;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
 }
+button.light-mode:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+.nav-item a.light-mode {
+  color: #374151; 
+}
+
+.nav-item a.light-mode .line {
+  background-color: #9ca3af; 
+}
+
+.nav-item a.light-mode:hover {
+  color: #1f2937; 
+}
+
+.nav-item a.light-mode:hover .line {
+  background-color: #1f2937;
+}
+body.light-mode button {
+  background-color: #ffffff; 
+  border: 1px solid #3f4349; 
+  color: #1f2937; 
+}
+
+body.light-mode button:hover {
+  background-color: #f3f4f6;
+  border-color: #374151;
+}
+
+body.light-mode .line {
+  background-color: #8e9195; 
+}
+body.light-mode .nav-item:hover .line {
+  background-color: #23272e; 
+}
+
+body.light-mode .nav-item a.active .line {
+  background-color: #23272e;
+}
+h3.light-mode {
+  color: #1f2937;
+}
+

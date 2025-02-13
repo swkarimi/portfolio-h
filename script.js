@@ -17,30 +17,17 @@ button.addEventListener("click", () => {
   }
 });
 
-// const sections = document.querySelectorAll('section[id]')
-
-// function scrollActive() {
-//   const scrollY = window.scrollY;
-
-//   sections.forEach(current => {
-//     const sectionHeight = current.offsetHeight,
-//     csectionId = current.getAttribute('id');
-
-//     if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-//       document.querySelector('.nav-menu')
-//     }
-//   })
-// }
-
 document.addEventListener("scroll", () => {
   const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".left-side nav ul li a");
+  const navLinks = document.querySelectorAll(".nav-item a");
 
   let currentSection = "";
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (scrollY >= sectionTop - 60) {
+    console.log(sectionTop - 220, Math.floor(window.scrollY));
+
+    if (window.scrollY >= sectionTop - 252) {
       currentSection = section.getAttribute("id");
     }
   });
@@ -52,3 +39,31 @@ document.addEventListener("scroll", () => {
     }
   });
 });
+
+emailjs.init("6nM1diP5-Ox46B0iD");
+
+function sendMessage() {
+  const messageContent = document.getElementById("message").value;
+  const senderName = "Website Visitor";
+
+  if (!messageContent.trim()) {
+    alert("Please enter a message before sending.");
+    return;
+  }
+
+  // Send the email
+  emailjs
+    .send("service_rpmkxcp", "template_s5gw08b", {
+      from_name: senderName,
+      to_name: "Your Name",
+      message: messageContent,
+    })
+    .then(() => {
+      alert("message sent successfully!");
+      document.querySelector("textarea").value = "";
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Failed to send message. Error: " + JSON.stringify(error));
+    });
+}
