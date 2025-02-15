@@ -1,46 +1,38 @@
-/** @format */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@format * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
-  scroll-padding-top: 12rem;
+  scroll-padding-top: 7rem;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #1c2a4a;
   color: #e2e8f0;
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 90px;
 }
+
 .header {
-  width: 90%;
+  width: 100%;
   height: 70px;
-  transform: translateX(-50%);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
 }
-.left_side {
-  color: blue;
-  font-weight: bold;
-}
+
 .exp1:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
-.main {
-  margin-left: 50%;
-}
+
 .line {
   width: 3.5rem;
   background-color: #9ca3af;
@@ -51,9 +43,36 @@ body {
   width: 6rem;
   background-color: white;
 }
+
+.nav-item a:hover .text {
+  color: white;
+}
+
 .nav-item a.active .line {
   width: 6rem;
   background-color: white;
+}
+
+.nav-item a.active .text {
+  color: white;
+}
+
+.light-mode .nav-item a:hover .line {
+  width: 6rem;
+  background-color: #1f2937;
+}
+
+.light-mode .nav-item a:hover .text {
+  color: #1f2937;
+}
+
+.light-mode .nav-item a.active .line {
+  width: 6rem;
+  background-color: #1f2937;
+}
+
+.light-mode .nav-item a.active .text {
+  color: #1f2937;
 }
 
 .experiences {
@@ -63,53 +82,45 @@ body {
   justify-content: space-around;
   gap: 70px;
 }
+
 .first-project > img {
   width: 30%;
 }
+
 .contact-message {
   font-size: 22px;
   margin-bottom: 22px;
 }
+
 body.light-mode {
   background-color: #f9fafb;
   color: #1f2937;
 }
-h3.light-mode {
 
+h3.light-mode {
   color: #1f2937;
 }
+
 header.light-mode {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 button.light-mode {
   background-color: #f3f4f6;
   border: 1px solid #d1d5db;
   color: #1f2937;
 }
+
 button.light-mode:hover {
   background-color: #e5e7eb;
   border-color: #9ca3af;
 }
-.nav-item a.light-mode {
-  color: #374151; 
-}
 
-.nav-item a.light-mode .line {
-  background-color: #9ca3af; 
-}
-
-.nav-item a.light-mode:hover {
-  color: #1f2937; 
-}
-
-.nav-item a.light-mode:hover .line {
-  background-color: #1f2937;
-}
 body.light-mode button {
-  background-color: #ffffff; 
-  border: 1px solid #3f4349; 
-  color: #1f2937; 
+  background-color: #ffffff;
+  border: 1px solid #3f4349;
+  color: #1f2937;
 }
 
 body.light-mode button:hover {
@@ -118,16 +129,21 @@ body.light-mode button:hover {
 }
 
 body.light-mode .line {
-  background-color: #8e9195; 
+  background-color: #8e9195;
 }
+
 body.light-mode .nav-item:hover .line {
-  background-color: #23272e; 
+  background-color: #23272e;
 }
 
 body.light-mode .nav-item a.active .line {
   background-color: #23272e;
 }
+
 h3.light-mode {
   color: #1f2937;
 }
 
+.tag-skill {
+  @apply inline-block bg-white rounded-md text-black text-sm px-2 py-1 font-semibold;
+}
