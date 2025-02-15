@@ -4,7 +4,7 @@
  */
 
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  content: ["./*.{html,js}"],
   theme: {
     fontFamily: {
       serif: ["ui-serif", "Georgia"],
@@ -25,4 +25,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}

@@ -25,9 +25,8 @@ document.addEventListener("scroll", () => {
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    console.log(sectionTop - 220, Math.floor(window.scrollY));
 
-    if (window.scrollY >= sectionTop - 252) {
+    if (window.scrollY >= sectionTop - 172) {
       currentSection = section.getAttribute("id");
     }
   });
