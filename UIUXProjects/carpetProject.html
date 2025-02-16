@@ -115,10 +115,10 @@
           <span class="font-bold">PROJECT CONTEXT:</span> GV Design Sprint
         </h3>
         <h3 class="text-lg md:text-xl mt-2">
-          <span class="font-bold">DURATION:</span> 5 Days (Summer 2023)
+          <span class="font-bold">DURATION:</span> 10 Days (Summer 2023)
         </h3>
         <h3 class="text-lg md:text-xl mt-2">
-          <span class="font-bold">TOOLS USED:</span> Figma, Mural, Zoom
+          <span class="font-bold">TOOLS USED:</span> Figma, Sketch, Zoom
         </h3>
       </div>
     </section>
@@ -207,13 +207,13 @@
         WIREFRAMES
       </h3>
       <h2 class="text-3xl md:text-4xl font-extrabold text-center mt-4">
-        Lorem ipsum dolor sit amet
+        Blueprints of Innovation
       </h2>
       <p
         class="text-lg md:text-xl text-center text-gray-700 mt-4 max-w-3xl mx-auto"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        suscipit nesciunt error, excepturi nulla obcaecati.
+        Wireframes are the blueprint of digital experiences, shaping structure,
+        flow, and usability before design takes form
       </p>
 
       <div
@@ -251,10 +251,19 @@
     <section
       class="min-h-screen px-6 md:px-24 py-16 text-center bg-gray-900 text-white"
     >
-      <h3 class="text-3xl md:text-4xl font-bold">SKETCHES</h3>
-      <h2 class="text-xl md:text-2xl mt-2">
-        Reinventing the Wine Tasting Experience
+      <h3 class="text-xl font-bold text-orange-600 uppercase text-center">
+        SKETCHES
+      </h3>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mt-4">
+        Weaving Innovation into Design
       </h2>
+      <p
+        class="text-lg md:text-xl text-center text-yellow-50 mt-4 max-w-3xl mx-auto"
+      >
+        From concept to creation, Yarn & Darn redefines the journey of
+        discovery—where texture meets technology, and tradition blends with
+        modernity
+      </p>
       <img
         class="mt-10 w-4/5 md:w-2/3 mx-auto"
         src="../assets/Carpet sketch.jpeg"
@@ -262,18 +271,20 @@
     </section>
 
     <!-- Seventh Section: Style Guide -->
-    <section class="min-h-screen max-w-7xl mx-auto p-10 rounded-lg">
+    <section class="min-h-screen max-w-screen-2xl mx-auto p-10 rounded-lg">
       <h1 class="text-2xl font-bold text-orange-600 text-center mb-6">
         THE STYLE GUIDE
       </h1>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-32">
+      <div
+        class="grid grid-cols-1 md:grid-cols-[repeat(3,minmax(400px,1fr))] gap-16 md:gap-20 lg:gap-24 w-full"
+      >
         <!-- Colors -->
-        <div>
+        <div class="w-full flex flex-col">
           <h2 class="text-lg font-semibold">Colors</h2>
           <div class="mt-4">
             <p class="font-medium">Primary</p>
-            <div class="flex gap-2 mt-2">
+            <div class="flex gap-4 mt-2">
               <div class="w-12 h-12 bg-orange-700 rounded-lg"></div>
               <div class="w-12 h-12 bg-orange-400 rounded-lg"></div>
               <div class="w-12 h-12 bg-orange-200 rounded-lg"></div>
@@ -286,53 +297,64 @@
         </div>
 
         <!-- Typography -->
-        <div>
+        <div class="w-full flex flex-col gap-4">
           <h2 class="text-lg font-semibold">Typography</h2>
-          <p class="text-4xl font-black mt-4">Header 34 pt. Black</p>
-          <p class="text-2xl font-extrabold mt-2">
-            Subheader 24 pt. Extra Bold
+          <p class="text-4xl font-black mt-4 whitespace-nowrap">
+            Herobold@48bold
           </p>
-          <p class="text-lg font-semibold mt-2">Body text 20 pt. Semi-bold</p>
+          <p class="text-2xl font-extrabold mt-2 whitespace-nowrap">
+            Title@40bold
+          </p>
+          <p class="text-lg font-semibold mt-2 whitespace-nowrap">
+            Body large@19bold
+          </p>
         </div>
 
         <!-- Components -->
-        <div>
+        <div class="w-full flex flex-col">
           <h2 class="text-lg font-semibold">Components</h2>
 
           <p class="text-sm text-gray-500 mt-4">Default Button Style</p>
           <div class="flex flex-col gap-4 mt-2">
+            <div class="flex flex-row justify-between mt-2">
+              <button
+              class="bg-white text-black px-2 py-2 font-light w-32 border-b-2"
+            > READ MORE </button>
             <button
-              class="bg-orange-300 text-white px-6 py-2 rounded-lg font-semibold shadow-md"
-            >
-              TEST
+              class="bg-gray-300 text-black px-2 py-2 font-light w-32"
+            > READ MORE</button>
+            </div>
             </button>
-            <button
-              class="border-2 bg-orange-600 px-6 py-2 rounded-lg font-semibold shadow-md"
+            <!-- <button
+              class="border-2 bg-orange-600 px-6 py-2 rounded-lg font-semibold shadow-md w-full"
             >
               TESTTESTTEST
-            </button>
+            </button> -->
           </div>
-
-          <p class="text-sm text-gray-500 mt-4">Search Bar</p>
+          <div class="flex flex-rox justify-between mt-8">
+            <img  class="w-40 h-56" src="../public/test2.png">
+            <img  class="w-40 h-56" src="../public/test1.png">
+          </div>
+          <!-- <p class="text-sm text-gray-500 mt-4">Search Bar</p>
           <div
             class="flex items-center bg-white shadow-md rounded-lg mt-2 p-3 w-full"
           >
             <input
               type="text"
               placeholder="What do you want to read today?"
-              class="flex-1 outline-none text-gray-700"
+              class="flex-1 outline-none text-gray-700 text-lg"
             />
             <button class="text-orange-700 text-lg">🎤</button>
-          </div>
+          </div> -->
 
-          <p class="text-sm text-gray-500 mt-4">Bottom Navigation Menu</p>
+          <p class="text-sm text-gray-500 mt-4">Navigation Menu</p>
           <div
-            class="flex gap-2 justify-around bg-white shadow-md p-4 rounded-lg mt-2"
+            class="flex gap-6 justify-around bg-white shadow-md p-4 rounded-lg mt-2"
           >
             <div class="text-center text-gray-600">🔍<br />Search</div>
-            <div class="text-center text-gray-600">🛒<br />Shopping Card</div>
-            <div class="text-center text-gray-600">❤️<br />Wish list</div>
-            <div class="text-center text-gray-600">👤<br />Account</div>
+            <div class="text-center text-gray-600">🛒<br />Shopping Cart</div>
+            <div class="text-center text-gray-600">&#9825;<br />Wish list</div>
+            <div class="text-center text-gray-600">&#128100;<br />Account</div>
           </div>
         </div>
       </div>
