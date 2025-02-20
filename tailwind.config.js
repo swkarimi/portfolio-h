@@ -4,7 +4,11 @@
  */
 
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: [
+    "./index.html",
+    "./carpetProject.html",
+    "./assets/js/script.js",
+  ],
   theme: {
     fontFamily: {
       serif: ["ui-serif", "Georgia"],
