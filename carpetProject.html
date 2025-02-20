@@ -268,52 +268,53 @@
         />
       </section>
       <!-- Seventh Section: Style Guide -->
-      <section class="min-h-screen max-w-screen-2xl mx-auto p-10 rounded-lg">
+      <section class="min-h-screen max-w-screen-2xl mx-auto p-8 rounded-lg">
         <h1 class="text-2xl font-bold text-orange-600 text-center mb-6">
           THE STYLE GUIDE
         </h1>
 
         <div
-          class="grid grid-cols-1 md:grid-cols-[repeat(3,minmax(400px,1fr))] gap-16 md:gap-20 lg:gap-24 w-full"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full"
         >
-          <!-- Colors -->
-          <div class="w-full flex flex-col">
-            <h2 class="text-lg font-semibold">Colors</h2>
-            <div class="mt-4">
-              <p class="font-medium">Primary</p>
-              <div class="flex gap-4 mt-2">
-                <div class="w-12 h-12 bg-orange-700 rounded-lg"></div>
-                <div class="w-12 h-12 bg-orange-400 rounded-lg"></div>
-                <div class="w-12 h-12 bg-orange-200 rounded-lg"></div>
+          <div class="lg:col-span-2 flex flex-col lg:flex-row gap-6">
+            <!-- Colors -->
+            <div class="w-full flex flex-col">
+              <h2 class="text-xl font-semibold bg-gray-800 text-gray-100 p-4 rounded-md">Colors</h2>
+              <div class="mt-4">
+                <p class="font-medium">Primary</p>
+                <div class="flex gap-4 mt-2">
+                  <div class="w-12 h-12 bg-orange-700 rounded-lg"></div>
+                  <div class="w-12 h-12 bg-orange-400 rounded-lg"></div>
+                  <div class="w-12 h-12 bg-orange-200 rounded-lg"></div>
+                </div>
+              </div>
+              <div class="mt-6">
+                <p class="font-medium">Neutral</p>
+                <div class="w-12 h-12 bg-gray-800 rounded-lg"></div>
               </div>
             </div>
-            <div class="mt-6">
-              <p class="font-medium">Neutral</p>
-              <div class="w-12 h-12 bg-gray-800 rounded-lg"></div>
+
+            <!-- Typography -->
+            <div class="w-full flex flex-col gap-4">
+              <h2 class="text-xl font-semibold bg-gray-800 text-gray-100 p-4 rounded-md">Typography</h2>
+              <p class="text-4xl font-bold mt-4 whitespace-nowrap">
+                Herobold@48bold
+              </p>
+              <p class="text-2xl font-bold mt-2 whitespace-nowrap">
+                Title@40bold
+              </p>
+              <p class="text-lg font-semibold mt-2 whitespace-nowrap">
+                Body large@19bold
+              </p>
             </div>
           </div>
-
-          <!-- Typography -->
-          <div class="w-full flex flex-col gap-4">
-            <h2 class="text-lg font-semibold">Typography</h2>
-            <p class="text-4xl font-black mt-4 whitespace-nowrap">
-              Herobold@48bold
-            </p>
-            <p class="text-2xl font-extrabold mt-2 whitespace-nowrap">
-              Title@40bold
-            </p>
-            <p class="text-lg font-semibold mt-2 whitespace-nowrap">
-              Body large@19bold
-            </p>
-          </div>
-
           <!-- Components -->
           <div class="w-full flex flex-col">
-            <h2 class="text-lg font-semibold">Components</h2>
+            <h2 class="text-xl font-semibold bg-gray-800 text-gray-100 p-4 rounded-md">Components</h2>
 
             <p class="text-sm text-gray-500 mt-4">Default Button Style</p>
             <div class="flex flex-col gap-4 mt-2">
-              <div class="flex flex-row justify-between mt-2">
+              <div class="flex flex-row justify-around p-2">
                 <button
                   class="bg-white text-black px-2 py-2 font-light w-32 border-b-2"
                 >
@@ -326,9 +327,9 @@
                 </button>
               </div>
 
-              <div class="flex flex-rox justify-between mt-8">
-                <img class="w-40 h-56" src="./assets/images/test2.png" alt="" />
-                <img class="w-40 h-56" src="./assets/images/test1.png" alt="" />
+              <div class="flex flex-row justify-around mt-8 w-full">
+                <img class="w-36" src="./assets/images/test2.png" alt="" />
+                <img class="w-36" src="./assets/images/test1.png" alt="" />
               </div>
 
               <!-- <p class="text-sm text-gray-500 mt-4">Search Bar</p>
